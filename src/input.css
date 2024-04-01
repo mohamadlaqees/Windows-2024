@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 485px) {
+  html {
+    width: fit-content;
+  }
+}
+
+.error {
+    opacity: .4;
+    background-color: red;
+    outline: red;
+    border:2px solid red;
+}

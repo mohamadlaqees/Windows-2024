@@ -18,10 +18,7 @@ module.exports = {
       content: {
         empty: "",
       },
-      screens: {
-        tablet: "640px",
-        // => @media (min-width: 640px) { ... }
-      },
+   
     },
   },
   plugins: [],

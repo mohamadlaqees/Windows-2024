@@ -18,6 +18,17 @@ let lName = document.getElementById("lName");
 let phoneNumber = document.getElementById("pNumber");
 
 let pages = [true, false, false, false, false, false, false];
+let info = {
+  zipCode: 0,
+  windowsType: "",
+  windowsNum: 0,
+  address: "",
+  Name: {
+    fName: "",
+    lName: "",
+  },
+  phoneNumber: 0,
+};
 
 back = () => {
   for (let i = 1; i <= pages.length; i++) {
@@ -29,6 +40,7 @@ back = () => {
 
 checkZIP = () => {
   if (zipInput.value.length === 5) {
+    info.zipCode = zipInput.value;
     return true;
   } else {
     return false;
@@ -37,18 +49,22 @@ checkZIP = () => {
 
 checkAddress = () => {
   if (address.value !== "") {
+    info.address = address.value;
     return true;
   }
 };
 
 checkName = () => {
   if (fName.value !== "" && lName.value !== "") {
+    info.Name.fName = fName.value;
+    info.Name.lName = lName.value;
     return true;
   }
 };
 
 checkNumber = () => {
   if (phoneNumber.value !== "") {
+    info.phoneNumber = phoneNumber.value;
     return true;
   }
 };
@@ -145,6 +161,7 @@ for (let i = 0; i < btn.length; i++) {
           pages[5] = false;
           survey6.style.display = "none";
           text.style.display = "none";
+          console.log(info);
         } else {
           phoneNumber.classList.add("error");
         }
@@ -160,6 +177,7 @@ for (let i = 0; i < card.length; i++) {
     pages[1] = false;
     survey3.style.display = "block";
     pages[2] = true;
+    info.windowsType = card[i].children[1].textContent;
   };
 }
 
@@ -169,5 +187,6 @@ for (let i = 0; i < windows.length; i++) {
     pages[2] = false;
     survey4.style.display = "block";
     pages[3] = true;
+    info.windowsNum = windows[i].textContent.trim();
   };
 }

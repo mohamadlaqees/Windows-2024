@@ -9,6 +9,7 @@ let text = document.getElementById("text");
 let btn = document.getElementsByClassName("btn");
 let zipInput = document.getElementById("zipInput");
 let errorZip = document.getElementById("errorText");
+let errorPhone = document.getElementById("errorPhone");
 let backBtn = document.getElementsByClassName("back");
 let card = document.getElementsByClassName("card");
 let windows = document.getElementsByClassName("windows");
@@ -39,11 +40,11 @@ back = () => {
 };
 
 checkZIP = () => {
-  if (zipInput.value.length === 5) {
+  const zipCodePattern = /^\d{5}$/;
+
+  if (zipCodePattern.test(zipInput.value)) {
     info.zipCode = zipInput.value;
     return true;
-  } else {
-    return false;
   }
 };
 
@@ -63,7 +64,8 @@ checkName = () => {
 };
 
 checkNumber = () => {
-  if (phoneNumber.value !== "") {
+  const re = /^\d{10}$/;
+  if (re.test(phoneNumber.value)) {
     info.phoneNumber = phoneNumber.value;
     return true;
   }
@@ -74,7 +76,7 @@ for (let i = 0; i < backBtn.length; i++) {
     switch (back()) {
       case 0: {
         zipInput.classList.remove("error");
-        errorZip.style.display = "none";
+        error.style.display = "none";
         survey2.style.display = "none";
         pages[1] = false;
         pages[0] = true;
@@ -126,7 +128,7 @@ for (let i = 0; i < btn.length; i++) {
           pages[0] = false;
           survey1.style.display = "none";
         } else {
-          errorZip.style.display = "block";
+          error.style.display = "block";
           zipInput.classList.add("error");
         }
         break;
@@ -164,6 +166,7 @@ for (let i = 0; i < btn.length; i++) {
           console.log(info);
         } else {
           phoneNumber.classList.add("error");
+          errorPhone.style.display = "block";
         }
         break;
       }

@@ -305,23 +305,21 @@
           Enter your phone number to get verbal quotes from local contractors
         </p>
 
-        <div class="mt-14">
+        <div class="mt-14 flex flex-col">
           <input
-            class="border-2 border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
             type="text"
             placeholder="Enter phone number"
             required
             id="pNumber"
           />
 
-          <label
-            for="myInput"
-            id="errorText"
-            class="block text-red-600"
-          ></label>
+          <label for="myInput" id="errorPhone" class="hidden text-red-600"
+            >Enter a valid phone number
+          </label>
 
           <button
-            class="btn mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+            class="btn mt-4 ml-auto mr-auto bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
           >
             Next
           </button>

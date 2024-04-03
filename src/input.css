@@ -9,8 +9,8 @@
 }
 
 .error {
-    opacity: .4;
-    background-color: red;
-    outline: red;
-    border:2px solid red;
+  opacity: 0.4;
+  background-color: red;
+  outline: red;
+  border: 2px solid red;
 }

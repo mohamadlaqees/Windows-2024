@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Windows 2024</title>
     <link href="./output.css" rel="stylesheet" />
-    <script src="./index.js"></script>
   </head>
   <body>
     <div class="text-center block md:flex md:justify-between pt-8 pb-4">
       <header class="md:ml-40">
-        <img
-          src="./images/logo.png"
-          alt=""
-          class="w-80 h-20 md:w-40 md:h-14"
-        />
+        <img src="./images/logo.png" alt="" class="w-80 h-20 md:w-40 md:h-14" />
       </header>
 
       <div class="md:mr-40">
@@ -92,25 +87,231 @@
     </div>
 
     <div
-      class="flex flex-col gap-10 text-center bg-back p-20 pb-24 lg:flex lg:flex-row lg:gap-36 lg:justify-between"
+      class="flex flex-col gap-10 text-center bg-back p-20 pb-24 lg:flex lg:flex-row lg:gap-20 lg:justify-between"
     >
-      <div class="p-10 m-auto bg-white rounded-md w-3/4 min-w-96">
-        <h3 class="text-text2 text-xl font-bold text-center">
+      <div
+        class="p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey1"
+      >
+        <h3 class="text-text2 text-xl mt-14 font-medium text-center">
           Contractor-Matching Service Pairs You with Expert Window Contractors
           in Your Area for Free
         </h3>
 
-        <p class="font-bold mt-8 text-center">
+        <p class="font-medium mt-8 text-center text-text4">
           Contribute to the Success of Your Window Replacement Project
+        </p>
+
+        <div class="mt-14">
+          <div>
+            <input
+              class="border-2 border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80 max-w-80"
+              type="text"
+              placeholder="ZIP Code"
+              required
+              id="zipInput"
+            />
+
+            <label for="myInput" id="errorText" class="hidden text-red-600"
+              >Enter a valid zip code
+            </label>
+          </div>
+
+          <button
+            class="btn mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+          >
+            Get Quotes
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey2"
+      >
+        <h1 class="text-xl text-text3 font-medium mt-14">
+          How many windows do you need to work on?
+        </h1>
+        <p class="font-medium text-text4 mt-14">
+          We use this information to determine the scope of the project
+        </p>
+
+        <div
+          class="flex flex-col sm:flex sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center mt-14 mb-14 gap-12"
+        >
+          <div
+            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+          >
+            <img class="w-20 m-auto" src="./images/survey2-1.png" alt="" />
+            <p>Window Replacement</p>
+          </div>
+          <div
+            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+          >
+            <img class="w-20 m-auto" src="./images/survey2-2.png" alt="" />
+            <p>Window Repair</p>
+          </div>
+          <div
+            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+          >
+            <img class="w-20 m-auto" src="./images/survey2-3.png" alt="" />
+            <p>Window Installation</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey3"
+      >
+        <h1 class="text-xl text-text3 font-medium mt-14">
+          How many windows do you need to work on?
+        </h1>
+        <p class="font-medium text-text4 mt-14">
+          We use this information to determine the scope of the project
+        </p>
+
+        <div class="mt-14 mb-14">
+          <div
+            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+          >
+            1-2 windows
+          </div>
+          <div
+            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+          >
+            3-5 windows
+          </div>
+          <div
+            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+          >
+            6-9 windows
+          </div>
+          <div
+            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+          >
+            +10 windows
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="back p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey4"
+      >
+        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+          Specify your street address
+        </h3>
+
+        <p class="font-medium text-text4 mt-8 text-center">
+          We'll search among the gutter installers in your neighborhood
+        </p>
+
+        <div class="mt-14 flex flex-col">
+          <input
+            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            type="text"
+            placeholder="Type Here e.g. 123 West Main Road"
+            required
+            id="address"
+          />
+
+          <button
+            class="btn ml-auto mr-auto mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+          >
+            Next
+          </button>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey5"
+      >
+        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+          What should we call you?
+        </h3>
+
+        <p class="font-medium text-text4 mt-8 text-center">
+          Enter your full name to let our managers reach out to you
+        </p>
+
+        <div class="mt-14 flex flex-col">
+          <input
+            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 mb-8 rounded-md w-80"
+            type="text"
+            placeholder="Enter first Name"
+            required
+            id="fName"
+          />
+
+          <input
+            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            type="text"
+            placeholder="Enter last Name"
+            required
+            id="lName"
+          />
+
+          <button
+            class="btn ml-auto mr-auto mt-6 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+          >
+            Next
+          </button>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        id="survey6"
+      >
+        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+          Receive expert advice for your windows project!
+        </h3>
+
+        <p class="font-medium text-text4 mt-8 text-center">
+          Enter your phone number to get verbal quotes from local contractors
         </p>
 
         <div class="mt-14">
           <input
             class="border-2 border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
             type="text"
-            placeholder="ZIP Code"
+            placeholder="Enter phone number"
             required
-            id="myInput"
+            id="pNumber"
           />
 
           <label
@@ -120,28 +321,28 @@
           ></label>
 
           <button
-            onclick="checkInput()"
-            class="mt-4 bg-butt p-2 text-white font-bold rounded-md transition duration-200 hover:opacity-85"
+            class="btn mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
           >
-            Get Quotes
+            Next
           </button>
-          <script>
-            function checkInput() {
-              const input = document.getElementById("myInput");
-              const errorText = document.getElementById("errorText");
+        </div>
 
-              if (input.value.trim() === "") {
-                errorText.textContent = "Input cannot be left blank.";
-                input.classList.add("error");
-              } else {
-                errorText.textContent = "";
-              }
-            }
-          </script>
+        <div class="text-center">
+          <button
+            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+          >
+            Back
+          </button>
         </div>
       </div>
 
-      <div class="min-w-96">
+      <div class="hidden sm:p-10 m-auto" id="end">
+        <p class="text-4xl font-bold text-white">
+          Thank you for taking the time to complete our survey.
+        </p>
+      </div>
+
+      <div class="min-w-96 self-center" id="text">
         <h1 class="font-bold text-5xl text-white">Get your best deal</h1>
         <p class="mt-4 text-2xl text-white">
           by quickly comparing 3 FREE quotes
@@ -183,5 +384,6 @@
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

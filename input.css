@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 485px) {
-  html {
-    width: fit-content;
-  }
-}
+
 
 .error {
   opacity: 0.4;

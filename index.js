@@ -76,7 +76,7 @@ for (let i = 0; i < backBtn.length; i++) {
     switch (back()) {
       case 0: {
         zipInput.classList.remove("error");
-        error.style.display = "none";
+        errorZip.style.display = "none";
         survey2.style.display = "none";
         pages[1] = false;
         pages[0] = true;
@@ -128,7 +128,7 @@ for (let i = 0; i < btn.length; i++) {
           pages[0] = false;
           survey1.style.display = "none";
         } else {
-          error.style.display = "block";
+          errorZip.style.display = "block";
           zipInput.classList.add("error");
         }
         break;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,24 +7,24 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="text-center block md:flex md:justify-between pt-8 pb-4">
+    <div class="block pb-4 pt-8 text-center md:flex md:justify-between">
       <header class="md:ml-40">
-        <img src="images/logo.png" alt="" class="w-80 h-20 md:w-40 md:h-14" />
+        <img src="images/logo.png" alt="" class="h-20 w-80 md:h-14 md:w-40" />
       </header>
 
       <div class="md:mr-40">
-        <a href="#" class="mt-1 font-bold text-xl text-text underline"
+        <a href="#" class="mt-1 text-xl font-bold text-text underline"
           >Get Free Quotes</a
         >
       </div>
     </div>
 
-    <div class="p-3 bg-nav">
-      <nav class="flex gap-10 md:ml-40 text-white">
+    <div class="bg-nav p-3">
+      <nav class="flex gap-10 text-white md:ml-40">
         <div>
           <svg
             style="display: inline; width: 5%"
-            class="w-1/12 vg-inline--fa fa-comments"
+            class="vg-inline--fa fa-comments w-1/12"
             aria-hidden="true"
             focusable="false"
             data-prefix="far"
@@ -45,7 +45,7 @@
         <div>
           <svg
             style="display: inline; width: 5%"
-            class="w-1/12 svg-inline--fa fa-map-marker-alt"
+            class="svg-inline--fa fa-map-marker-alt w-1/12"
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
@@ -87,25 +87,25 @@
     </div>
 
     <div
-      class="flex flex-col gap-10 text-center bg-back p-20 pb-24 lg:flex lg:flex-row lg:gap-20 lg:justify-between"
+      class="flex flex-col gap-10 bg-back p-20 pb-24 text-center lg:flex lg:flex-row lg:justify-between lg:gap-20"
     >
       <div
-        class="p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey1"
       >
-        <h3 class="text-text2 text-xl mt-14 font-medium text-center">
+        <h3 class="mt-14 text-center text-xl font-medium text-text2">
           Contractor-Matching Service Pairs You with Expert Window Contractors
           in Your Area for Free
         </h3>
 
-        <p class="font-medium mt-8 text-center text-text4">
+        <p class="mt-8 text-center font-medium text-text4">
           Contribute to the Success of Your Window Replacement Project
         </p>
 
         <div class="mt-14">
           <div>
             <input
-              class="border-2 border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80 max-w-80"
+              class="w-80 max-w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
               type="text"
               placeholder="ZIP Code"
               required
@@ -118,7 +118,7 @@
           </div>
 
           <button
-            class="btn mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+            class="btn mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Get Quotes
           </button>
@@ -126,42 +126,42 @@
       </div>
 
       <div
-        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey2"
       >
-        <h1 class="text-xl text-text3 font-medium mt-14">
+        <h1 class="mt-14 text-xl font-medium text-text3">
           How many windows do you need to work on?
         </h1>
-        <p class="font-medium text-text4 mt-14">
+        <p class="mt-14 font-medium text-text4">
           We use this information to determine the scope of the project
         </p>
 
         <div
-          class="flex flex-col sm:flex sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center mt-14 mb-14 gap-12"
+          class="mb-14 mt-14 flex flex-col justify-center gap-12 sm:flex sm:flex-row sm:flex-wrap lg:flex-nowrap"
         >
           <div
-            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
-            <img class="w-20 m-auto" src="images/survey2-1.png" alt="" />
+            <img class="m-auto w-20" src="images/survey2-1.png" alt="" />
             <p>Window Replacement</p>
           </div>
           <div
-            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
-            <img class="w-20 m-auto" src="images/survey2-2.png" alt="" />
+            <img class="m-auto w-20" src="images/survey2-2.png" alt="" />
             <p>Window Repair</p>
           </div>
           <div
-            class="card w-card border-4 p-8 shadow-md cursor-pointer transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
-            <img class="w-20 m-auto" src="images/survey2-3.png" alt="" />
+            <img class="m-auto w-20" src="images/survey2-3.png" alt="" />
             <p>Window Installation</p>
           </div>
         </div>
 
         <div class="text-center">
           <button
-            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+            class="back mt-14 cursor-pointer rounded-sm bg-text3 p-2 pl-8 pr-8 text-white transition duration-150 hover:opacity-btn"
           >
             Back
           </button>
@@ -169,34 +169,34 @@
       </div>
 
       <div
-        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey3"
       >
-        <h1 class="text-xl text-text3 font-medium mt-14">
+        <h1 class="mt-14 text-xl font-medium text-text3">
           How many windows do you need to work on?
         </h1>
-        <p class="font-medium text-text4 mt-14">
+        <p class="mt-14 font-medium text-text4">
           We use this information to determine the scope of the project
         </p>
 
-        <div class="mt-14 mb-14">
+        <div class="mb-14 mt-14">
           <div
-            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
           >
             1-2 windows
           </div>
           <div
-            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
           >
             3-5 windows
           </div>
           <div
-            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
           >
             6-9 windows
           </div>
           <div
-            class="windows p-4 pr-20 pl-20 mb-4 bg-butt w-fit m-auto text-white text-lg font-medium rounded-lg cursor-pointer transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
           >
             +10 windows
           </div>
@@ -204,7 +204,7 @@
 
         <div class="text-center">
           <button
-            class="back p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+            class="back cursor-pointer rounded-sm bg-text3 p-2 pl-8 pr-8 text-white transition duration-150 hover:opacity-btn"
           >
             Back
           </button>
@@ -212,20 +212,20 @@
       </div>
 
       <div
-        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey4"
       >
-        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+        <h3 class="mt-14 text-center text-2xl font-medium text-text2">
           Specify your street address
         </h3>
 
-        <p class="font-medium text-text4 mt-8 text-center">
+        <p class="mt-8 text-center font-medium text-text4">
           We'll search among the gutter installers in your neighborhood
         </p>
 
         <div class="mt-14 flex flex-col">
           <input
-            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
             type="text"
             placeholder="Type Here e.g. 123 West Main Road"
             required
@@ -233,7 +233,7 @@
           />
 
           <button
-            class="btn ml-auto mr-auto mt-4 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+            class="btn ml-auto mr-auto mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
@@ -241,7 +241,7 @@
 
         <div class="text-center">
           <button
-            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+            class="back mt-14 cursor-pointer rounded-sm bg-text3 p-2 pl-8 pr-8 text-white transition duration-150 hover:opacity-btn"
           >
             Back
           </button>
@@ -249,20 +249,20 @@
       </div>
 
       <div
-        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey5"
       >
-        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+        <h3 class="mt-14 text-center text-2xl font-medium text-text2">
           What should we call you?
         </h3>
 
-        <p class="font-medium text-text4 mt-8 text-center">
+        <p class="mt-8 text-center font-medium text-text4">
           Enter your full name to let our managers reach out to you
         </p>
 
         <div class="mt-14 flex flex-col">
           <input
-            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 mb-8 rounded-md w-80"
+            class="mb-8 ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
             type="text"
             placeholder="Enter first Name"
             required
@@ -270,7 +270,7 @@
           />
 
           <input
-            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
             type="text"
             placeholder="Enter last Name"
             required
@@ -278,7 +278,7 @@
           />
 
           <button
-            class="btn ml-auto mr-auto mt-6 bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+            class="btn ml-auto mr-auto mt-6 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
@@ -286,7 +286,7 @@
 
         <div class="text-center">
           <button
-            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+            class="back mt-14 cursor-pointer rounded-sm bg-text3 p-2 pl-8 pr-8 text-white transition duration-150 hover:opacity-btn"
           >
             Back
           </button>
@@ -294,20 +294,20 @@
       </div>
 
       <div
-        class="hidden p-10 m-auto bg-white rounded-md md:w-srv min-w-96"
+        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
         id="survey6"
       >
-        <h3 class="text-text2 mt-14 text-2xl font-medium text-center">
+        <h3 class="mt-14 text-center text-2xl font-medium text-text2">
           Receive expert advice for your windows project!
         </h3>
 
-        <p class="font-medium text-text4 mt-8 text-center">
+        <p class="mt-8 text-center font-medium text-text4">
           Enter your phone number to get verbal quotes from local contractors
         </p>
 
         <div class="mt-14 flex flex-col">
           <input
-            class="border-2 ml-auto mr-auto border-gray-500 outline-nav pt-2 pb-2 pl-4 rounded-md w-80"
+            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
             type="text"
             placeholder="Enter phone number"
             required
@@ -319,7 +319,7 @@
           </label>
 
           <button
-            class="btn mt-4 ml-auto mr-auto bg-butt p-2 pl-12 pr-12 text-white font-bold rounded-md transition duration-200 hover:opacity-btn"
+            class="btn ml-auto mr-auto mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
@@ -327,56 +327,56 @@
 
         <div class="text-center">
           <button
-            class="back mt-14 p-2 pl-8 pr-8 hover:opacity-btn bg-text3 text-white rounded-sm cursor-pointer transition duration-150"
+            class="back mt-14 cursor-pointer rounded-sm bg-text3 p-2 pl-8 pr-8 text-white transition duration-150 hover:opacity-btn"
           >
             Back
           </button>
         </div>
       </div>
 
-      <div class="hidden sm:p-10 m-auto" id="end">
+      <div class="m-auto hidden sm:p-10" id="end">
         <p class="text-4xl font-bold text-white">
           Thank you for taking the time to complete our survey.
         </p>
       </div>
 
       <div class="min-w-96 self-center" id="text">
-        <h1 class="font-bold text-5xl text-white">Get your best deal</h1>
+        <h1 class="text-5xl font-bold text-white">Get your best deal</h1>
         <p class="mt-4 text-2xl text-white">
           by quickly comparing 3 FREE quotes
         </p>
 
-        <div class="mt-8 text-white text-start">
+        <div class="mt-8 text-start text-white">
           <ul>
             <li class="relative pl-6">
               <span
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-transparent border-2"
+                class="absolute left-0 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full border-2 bg-transparent"
               ></span>
 
               Next day installation
             </li>
             <li class="relative pl-6">
               <span
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-transparent border-2"
+                class="absolute left-0 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full border-2 bg-transparent"
               ></span>
               Quotes from local engineers
             </li>
             <li class="relative pl-6">
               <span
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-transparent border-2"
+                class="absolute left-0 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full border-2 bg-transparent"
               ></span>
               1.9 million quotes in 10 years
             </li>
             <li class="relative pl-6">
               <span
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-transparent border-2"
+                class="absolute left-0 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full border-2 bg-transparent"
               ></span>
               Save up to £500 on installation
             </li>
           </ul>
         </div>
 
-        <div class="mt-8 text-white p-5 bg-box rounded-md font-bold">
+        <div class="mt-8 rounded-md bg-box p-5 font-bold text-white">
           The smarter way to find approved heating engineers Excellent 4.8 out
           of 5
         </div>

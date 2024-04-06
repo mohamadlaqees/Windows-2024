@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  width: fit-content;
+}
 
 .error {
   opacity: 0.4;

@@ -89,10 +89,7 @@
     <div
       class="flex flex-col gap-10 bg-back p-20 pb-24 text-center lg:flex lg:flex-row lg:justify-between lg:gap-20"
     >
-      <div
-        class="m-auto min-w-96 rounded-md bg-white p-10 md:w-srv"
-        id="survey1"
-      >
+      <div class="m-auto w-zip rounded-md bg-white p-10 sm:w-srv" id="survey1">
         <h3 class="mt-14 text-center text-xl font-medium text-text2">
           Contractor-Matching Service Pairs You with Expert Window Contractors
           in Your Area for Free
@@ -105,7 +102,7 @@
         <div class="mt-14">
           <div>
             <input
-              class="w-80 max-w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
+              class="w-auto rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav md:w-80"
               type="text"
               placeholder="ZIP Code"
               required
@@ -126,7 +123,7 @@
       </div>
 
       <div
-        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
+        class="m-auto hidden w-zip rounded-md bg-white p-10 sm:w-srv"
         id="survey2"
       >
         <h1 class="mt-14 text-xl font-medium text-text3">
@@ -140,19 +137,19 @@
           class="mb-14 mt-14 flex flex-col justify-center gap-12 sm:flex sm:flex-row sm:flex-wrap lg:flex-nowrap"
         >
           <div
-            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer self-center border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
             <img class="m-auto w-20" src="images/survey2-1.png" alt="" />
             <p>Window Replacement</p>
           </div>
           <div
-            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer self-center border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
             <img class="m-auto w-20" src="images/survey2-2.png" alt="" />
             <p>Window Repair</p>
           </div>
           <div
-            class="card w-card cursor-pointer border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
+            class="card w-card cursor-pointer self-center border-4 p-8 shadow-md transition duration-150 hover:bg-slate-100"
           >
             <img class="m-auto w-20" src="images/survey2-3.png" alt="" />
             <p>Window Installation</p>
@@ -169,7 +166,7 @@
       </div>
 
       <div
-        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
+        class="m-auto hidden w-zip rounded-md bg-white p-10 sm:w-srv"
         id="survey3"
       >
         <h1 class="mt-14 text-xl font-medium text-text3">
@@ -181,22 +178,22 @@
 
         <div class="mb-14 mt-14">
           <div
-            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-auto cursor-pointer rounded-lg bg-butt p-5 text-lg font-medium text-white transition duration-150 hover:opacity-btn sm:w-fit sm:p-4 sm:pl-20 sm:pr-20"
           >
             1-2 windows
           </div>
           <div
-            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-auto cursor-pointer rounded-lg bg-butt p-5 text-lg font-medium text-white transition duration-150 hover:opacity-btn sm:w-fit sm:p-4 sm:pl-20 sm:pr-20"
           >
             3-5 windows
           </div>
           <div
-            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-auto cursor-pointer rounded-lg bg-butt p-5 text-lg font-medium text-white transition duration-150 hover:opacity-btn sm:w-fit sm:p-4 sm:pl-20 sm:pr-20"
           >
             6-9 windows
           </div>
           <div
-            class="windows m-auto mb-4 w-fit cursor-pointer rounded-lg bg-butt p-4 pl-20 pr-20 text-lg font-medium text-white transition duration-150 hover:opacity-btn"
+            class="windows m-auto mb-4 w-auto cursor-pointer rounded-lg bg-butt p-5 text-lg font-medium text-white transition duration-150 hover:opacity-btn sm:w-fit sm:p-4 sm:pl-20 sm:pr-20"
           >
             +10 windows
           </div>
@@ -212,7 +209,7 @@
       </div>
 
       <div
-        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
+        class="m-auto hidden w-zip rounded-md bg-white p-10 sm:w-srv"
         id="survey4"
       >
         <h3 class="mt-14 text-center text-2xl font-medium text-text2">
@@ -223,17 +220,19 @@
           We'll search among the gutter installers in your neighborhood
         </p>
 
-        <div class="mt-14 flex flex-col">
-          <input
-            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
-            type="text"
-            placeholder="Type Here e.g. 123 West Main Road"
-            required
-            id="address"
-          />
+        <div class="mt-14">
+          <div>
+            <input
+              class="w-auto rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav md:w-80"
+              type="text"
+              placeholder="Type Here e.g. 123 West Main Road"
+              required
+              id="address"
+            />
+          </div>
 
           <button
-            class="btn ml-auto mr-auto mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
+            class="btn mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
@@ -249,7 +248,7 @@
       </div>
 
       <div
-        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
+        class="m-auto hidden w-zip rounded-md bg-white p-10 sm:w-srv"
         id="survey5"
       >
         <h3 class="mt-14 text-center text-2xl font-medium text-text2">
@@ -260,25 +259,27 @@
           Enter your full name to let our managers reach out to you
         </p>
 
-        <div class="mt-14 flex flex-col">
-          <input
-            class="mb-8 ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
-            type="text"
-            placeholder="Enter first Name"
-            required
-            id="fName"
-          />
+        <div class="mt-14">
+          <div>
+            <input
+              class="mb-6 w-auto rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav md:w-80"
+              type="text"
+              placeholder="Enter first Name"
+              required
+              id="fName"
+            />
 
-          <input
-            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
-            type="text"
-            placeholder="Enter last Name"
-            required
-            id="lName"
-          />
+            <input
+              class="w-auto rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav md:w-80"
+              type="text"
+              placeholder="Enter last Name"
+              required
+              id="lName"
+            />
+          </div>
 
           <button
-            class="btn ml-auto mr-auto mt-6 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
+            class="btn mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
@@ -294,7 +295,7 @@
       </div>
 
       <div
-        class="m-auto hidden min-w-96 rounded-md bg-white p-10 md:w-srv"
+        class="m-auto hidden w-zip rounded-md bg-white p-10 sm:w-srv"
         id="survey6"
       >
         <h3 class="mt-14 text-center text-2xl font-medium text-text2">
@@ -305,21 +306,23 @@
           Enter your phone number to get verbal quotes from local contractors
         </p>
 
-        <div class="mt-14 flex flex-col">
-          <input
-            class="ml-auto mr-auto w-80 rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav"
-            type="text"
-            placeholder="Enter phone number"
-            required
-            id="pNumber"
-          />
+        <div class="mt-14">
+          <div>
+            <input
+              class="w-auto rounded-md border-2 border-gray-500 pb-2 pl-4 pt-2 outline-nav md:w-80"
+              type="text"
+              placeholder="Enter phone number"
+              required
+              id="pNumber"
+            />
 
-          <label for="myInput" id="errorPhone" class="hidden text-red-600"
-            >Enter a valid phone number
-          </label>
+            <label for="myInput" id="errorPhone" class="hidden text-red-600"
+              >Enter a valid phone number
+            </label>
+          </div>
 
           <button
-            class="btn ml-auto mr-auto mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
+            class="btn mt-4 rounded-md bg-butt p-2 pl-12 pr-12 font-bold text-white transition duration-200 hover:opacity-btn"
           >
             Next
           </button>
